@@ -21,26 +21,74 @@ body
     max-width: 400px;
     padding: 20px;
     margin-left: 35%;
-}
 
-p:first-of-type
-{
-    margin-top: 10px;
-    margin-bottom: 30px;
+    animation-name: intro;
+    animation-duration: 1s;
 }
 
 h1
 {
     font-size: 45px;
     margin: 0 auto;
+
+    animation-name: intro-opacity;
+    animation-duration: 2s;
+}
+
+p:first-of-type
+{
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    animation-name: intro-opacity;
+    animation-duration: 2.4s;
 }
 
 input, button
 {
     font-size: large;
+
+    animation-name: intro-opacity;
+    animation-duration: 2.8s;
 }
 
 button
 {
     width: 45px;
+}
+
+@keyframes intro
+{
+    0%
+    {
+        transform: translateY(-400px);
+    }
+
+    50%
+    {
+        transform: translateY(50px);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro-opacity
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    50%
+    {
+        opacity: 0.5;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
 }
