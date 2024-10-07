@@ -56,7 +56,7 @@ function addItem()
 
     // Sets a class attribute for the trash can.
     trash.setAttribute('class', 'trashcan');
-    trash.innerHTML = '&#128128;';
+    trash.innerHTML = '&#128465;';
 
     // An if statement that makes sure the input field is NOT empty.
     if (text.length == 0)
