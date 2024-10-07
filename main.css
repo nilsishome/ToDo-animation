@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/horror-type');
+/* My CSS code. */
+
+.completed
+{
+    color: #e81212;
+
+    font-family:'Horror Type', sans-serif;
+    font-size: 300%;
+}
+
+.trashcan
+{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+#error
+{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+body
+{
+    font-family: 'Cochin', serif;
+    font-size: 18px;
+
+    background-color: #000;
+    background-image: url('halloween.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+button
+{
+    background-image: linear-gradient(to top right, #ff7b00 50%, #fff);
+}
+
+button:hover
+{
+    background-image: linear-gradient(to top right, #e81212 50%, #fff);
+    color: #fff;
+}
+
+div
+{
+    background-image: radial-gradient(circle at center, #ff7b00, #e81212);
+
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+
+    border: 1px solid #000;
+    border-radius: 50px;
+
+    padding: 2%;
+}
+
+h1
+{
+    text-align: center;
+}
+
+input
+{
+    color: #e81212;
+}
+
+input, button
+{
+    border-radius: 50px;
+    margin: 5px;
+}
+
+ul
+{
+    background-color: #ff7b00;
+    border-radius: 50px;
+}
+
+li
+{
+    font-size: 20px;
+    list-style: none;
+}
+
+@media (max-width: 580px) {
+    
+    div
+    {
+        min-width: 320px;
+        min-height: 400px;
+        margin-left: 0;
+    }
+
+    input
+    {
+        min-width: 295px;
+        min-height: 35px;
+
+        font-size: 1em;
+
+        margin-top: 3em;
+    }
+
+    button
+    {
+        display: block;
+        min-height: 45px;
+        min-width: 80px;
+
+        margin-left: 220px;
+        margin-top: 7em;
+    }
+
+    ul
+    {
+        max-width: 170px;
+    }
+
+    #error
+    {
+        margin-top: -5.5em;
+    }
+
+}
