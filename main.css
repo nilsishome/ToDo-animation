@@ -1,5 +1,46 @@
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(to top, #e37e7e 1%, #e0b9b9 90%);
+}
+
 .completed
 {
     color: #888;
     text-decoration: line-through;
+}
+
+#wrapper
+{
+    display: block;
+    text-align: center;
+    background-color: #fff;
+
+    box-shadow: 0 0 10px #e37e7e;
+
+    max-width: 400px;
+    padding: 20px;
+    margin-left: 35%;
+}
+
+p:first-of-type
+{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h1
+{
+    font-size: 45px;
+    margin: 0 auto;
+}
+
+input, button
+{
+    font-size: large;
+}
+
+button
+{
+    width: 45px;
 }
