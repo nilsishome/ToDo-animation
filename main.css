@@ -4,12 +4,6 @@ body
     background: linear-gradient(to top, #e37e7e 1%, #e0b9b9 90%);
 }
 
-.completed
-{
-    color: #888;
-    text-decoration: line-through;
-}
-
 #wrapper
 {
     display: block;
@@ -26,13 +20,43 @@ body
     animation-duration: 1s;
 }
 
+#error
+{
+    color: red;
+    font-style: italic;
+}
+
+.completed
+{
+    color: #888;
+    text-decoration: line-through;
+    transition: color 1s;
+}
+
+.completed .trashcan
+{
+    display: none;
+}
+
+.trashcan
+{
+    margin-left: 10px;
+
+    font-size: 0.75rem;
+}
+
+.trashcan:hover
+{
+    cursor: pointer;
+}
+
 h1
 {
     font-size: 45px;
     margin: 0 auto;
 
     animation-name: intro-opacity;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 p:first-of-type
@@ -41,20 +65,39 @@ p:first-of-type
     margin-bottom: 30px;
 
     animation-name: intro-opacity;
-    animation-duration: 2.4s;
+    animation-duration: 1.5s;
 }
 
 input, button
 {
-    font-size: large;
+    font-size: 1.25rem;
 
     animation-name: intro-opacity;
-    animation-duration: 2.8s;
+    animation-duration: 2s;
 }
 
 button
 {
     width: 45px;
+}
+
+li
+{
+    font-size: 1.45rem;
+
+    animation-name: list-fade;
+    animation-duration: 0.3s;
+}
+
+li span:first-child:hover
+{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+ul
+{
+    list-style: none;
 }
 
 @keyframes intro
@@ -90,5 +133,26 @@ button
     100%
     {
         opacity: 1;
+    }
+}
+
+@keyframes list-fade
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    50%
+    {
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
