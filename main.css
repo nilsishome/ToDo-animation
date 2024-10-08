@@ -10,7 +10,7 @@ body
     text-align: center;
     background-color: #fff;
 
-    box-shadow: 0 0 10px #e37e7e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
     max-width: 400px;
     padding: 20px;
@@ -36,21 +36,18 @@ body
     transition: color 1000ms;
 }
 
-.completed .trashcan
-{
-    display: none;
-}
-
 .trashcan
 {
     margin-left: 10px;
-
+    opacity: 0.5;
     font-size: 0.75rem;
 }
 
 .trashcan:hover
 {
     cursor: pointer;
+    opacity: 1;
+    transition: opacity 500ms;
 }
 
 h1
