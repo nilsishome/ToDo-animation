@@ -58,16 +58,18 @@ function addItem()
     trash.setAttribute('class', 'trashcan');
     trash.innerHTML = '&#128465;';
 
-    // An if statement that makes sure the input field is NOT empty.
+    // An if statement that makes sure the input field is NOT empty. + An animation class for CSS.
     if (text.length == 0)
     {
         document.querySelector('#error').innerText = 'Input must not be empty';
+        document.querySelector('#error').setAttribute('class', 'animate');
         return;
     } 
     else
     {   
         // Empties the input field and the error message, of all text.
         document.querySelector('#error').innerText = '';
+        document.querySelector('#error').setAttribute('class', '');
         input.value = '';
     }
 

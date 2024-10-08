@@ -17,20 +17,23 @@ body
     margin-left: 35%;
 
     animation-name: intro;
-    animation-duration: 1s;
+    animation-duration: 1000ms;
 }
 
-#error
+#error.animate
 {
     color: red;
     font-style: italic;
+
+    animation-name: error-blink;
+    animation-duration: 800ms;
 }
 
 .completed
 {
     color: #888;
     text-decoration: line-through;
-    transition: color 1s;
+    transition: color 1000ms;
 }
 
 .completed .trashcan
@@ -56,7 +59,7 @@ h1
     margin: 0 auto;
 
     animation-name: intro-opacity;
-    animation-duration: 1s;
+    animation-duration: 1000ms;
 }
 
 p:first-of-type
@@ -65,7 +68,7 @@ p:first-of-type
     margin-bottom: 30px;
 
     animation-name: intro-opacity;
-    animation-duration: 1.5s;
+    animation-duration: 1500ms;
 }
 
 input, button
@@ -73,7 +76,7 @@ input, button
     font-size: 1.25rem;
 
     animation-name: intro-opacity;
-    animation-duration: 2s;
+    animation-duration: 2000ms;
 }
 
 button
@@ -86,7 +89,7 @@ li
     font-size: 1.45rem;
 
     animation-name: list-fade;
-    animation-duration: 0.3s;
+    animation-duration: 300ms;
 }
 
 li span:first-child:hover
@@ -154,5 +157,33 @@ ul
     {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes error-blink
+{
+    0%
+    {
+        opacity: 1;
+    }
+
+    30%
+    {
+        opacity: 0;
+    }
+
+    60%
+    {
+        opacity: 1;
+    }
+
+    80%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
     }
 }
