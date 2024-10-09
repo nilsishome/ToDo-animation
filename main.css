@@ -52,28 +52,40 @@ body
 
 h1
 {
+    opacity: 0;
     font-size: 45px;
     margin: 0 auto;
 
     animation-name: intro-opacity;
-    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1000ms;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
 }
 
 p:first-of-type
 {
+    opacity: 0;
     margin-top: 10px;
     margin-bottom: 30px;
 
     animation-name: intro-opacity;
-    animation-duration: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1200ms;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
 }
 
 input, button
 {
+    opacity: 0;
     font-size: 1.25rem;
 
     animation-name: intro-opacity;
-    animation-duration: 2000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1400ms;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
 }
 
 button
@@ -125,9 +137,19 @@ ul
         opacity: 0;
     }
 
+    25%
+    {
+        opacity: 0.25;
+    }
+
     50%
     {
         opacity: 0.5;
+    }
+
+    75%
+    {
+        opacity: 0.75;
     }
 
     100%
@@ -164,17 +186,17 @@ ul
         opacity: 1;
     }
 
-    30%
+    25%
     {
         opacity: 0;
     }
 
-    60%
+    50%
     {
         opacity: 1;
     }
 
-    80%
+    75%
     {
         opacity: 0;
     }
